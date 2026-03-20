@@ -9,66 +9,65 @@ This tutorial focuses on establishing the necessary infrastructure in Microsoft 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines)
-- Azure Virtual Network
-- Azure Resource Groups
+- Active Directory Domain Services (AD DS)
+- Active Directory Users and Computers (ADUC)
+- Windows PowerShell ISE
+- Active Directory PowerShell Module
 - Remote Desktop Protocol (RDP)
-- DNS
 
-<h2>Operating Systems Used </h2>
 
-- Windows Server 2022 (Datacenter Azure Edition Hotpatch-x64 Gen2)
-- Windows 11 Pro (Version 25H2-x64)
-  
+<h2>Operating Systems Used</h2>
 
-<h2> Open and Review the PowerShell Script</h2>
+- Windows Server 2022 (Domain Controller: DC-1)
+- Windows 11 (Client Machine: Client-1)
 
-<img width="1536" height="808" alt="Lab1" src="https://github.com/user-attachments/assets/10ef2fe8-9079-4ceb-aa6a-35ab6405fb09" />
+<h2>Open and Review the PowerShell Script</h2>
+
+<img width="1536" height="1024" alt="LabB5" src="https://github.com/user-attachments/assets/ea37d4dd-bbd6-4bad-83ad-d6af1f2fbcc9" />
+</p>
+<p>
+Steps:
+   
+- Launch **Windows PowerShell ISE** with administrative privileges.
+- Import or open the user creation script within the script editor.
+- Examine the script variables and configuration details carefully.
+- Verify the password that will be applied to the generated user accounts.
+- Check the total number of users the script is configured to create.
+- Go through the overall script layout to ensure everything is correct before running it.
+
+**Explanation**
+This step represents the verification stage of the automation process. Reviewing the newly created accounts in Active Directory confirms that the script executed correctly and that all users were added to the appropriate groups and locations.
+
+<h2>Review the New-ADUser Automation Logic</h2>
+
+<img width="1536" height="1024" alt="LabB7" src="https://github.com/user-attachments/assets/441fcb41-940d-4f32-a998-6e651ebc19d6" />
 </p>
 <p>
 Steps:
   
-Open Windows PowerShell ISE as Administrator.
-Load the user creation script.
-Review the configuration variables at the top of the script.
-Confirm the password value and number of accounts to generate.
-Confirm the script points to the correct Organizational Unit path.
+- Examine the portion of the script that handles the creation of user accounts.
+- Ensure that a loop is implemented to generate multiple users automatically.
+- Check that first and last names are being generated programmatically.
+- Verify that these names are combined properly to form a username.
+- Review the method used to convert the password into a secure string format.
+- Confirm that the **New-ADUser** cmdlet is being used to create each user account.
+- Ensure the **Path** parameter is set to the **_EMPLOYEES** Organizational Unit.
+- Verify that all newly created accounts are set to active (enabled).
 
-Why this step matters
-This is the preparation stage. It ensures the script is configured correctly before user accounts are created in bulk.
+**Explanation:**
+This step demonstrates the practical use of scripting for scalability. Automating user creation allows administrators to quickly deploy large numbers of accounts while maintaining standardized configurations and minimizing human error.
 
+<h2>Execute the Script and Create User Accounts</h2>
 
-<h2>Configure the Script to Use New-ADUser</h2>
-
-<img width="1536" height="810" alt="Lab2" src="https://github.com/user-attachments/assets/8934d166-7e95-4b85-9004-757912121816" />
-</p>
-<p>
-Steps:
-  
-Define a loop to repeat the process for the total number of users.
-Generate a random first name.
-Generate a random last name.
-Combine them into a username format.
-Convert the password into a secure string.
-Use New-ADUser to create the account.
-Set the Path parameter so the account is created inside _EMPLOYEES.
-Keep the account enabled so it can be used immediately.
-
-Why this step matters
-This is the core automation step. It removes the need to manually create users one by one and places them directly into the correct Organizational Unit.
-
-
-<h2>Run the Script and Begin Creating Accounts</h2>
-
-<p><img width="1536" height="802" alt="Lab4" src="https://github.com/user-attachments/assets/fd65a346-5a87-4320-a7cb-066a851c47b5" />
-
+<img width="1536" height="1024" alt="LabB8" src="https://github.com/user-attachments/assets/f755d8b7-f5e1-4541-8df0-2461fae52572" />
 </p>
 <p>
 Step:
 
-Click Run Script in PowerShell ISE.
-Watch the console output at the bottom of the window.
-Confirm that usernames are being generated one after another.
-Allow the script to continue until the required number of users are created.
+- Click **Run Script** in PowerShell ISE.
+- Watch the console output at the bottom of the window.
+- Confirm that usernames are being generated one after another.
+- Allow the script to continue until the required number of users are created.
 
 Why this step matters
 This proves that the script is not just written — it is actually executing and creating users in Active Directory.
