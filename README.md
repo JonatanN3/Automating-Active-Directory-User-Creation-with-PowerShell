@@ -79,7 +79,7 @@ This step validates that the automation is functioning correctly. Monitoring the
 <p>
 Steps:
   
-- Open **Active Directory Users and Computers** from your administrative tools.
+- Open Active Directory Users and Computers from your administrative tools.
 - Expand the domain in the left-hand pane to view all OUs.
 - Select the _EMPLOYEES Organizational Unit.
 - Review the list of users shown in the main panel.
