@@ -3,7 +3,7 @@
 
 
 <h1>Automating Active Directory User Creation with PowerShell</h1>
-This tutorial focuses on establishing the necessary infrastructure in Microsoft Azure for an Active Directory deployment. This includes creating the required cloud resources, configuring a virtual network, deploying virtual machines, and confirming proper network communication between systems before implementing Active Directory Domain Services.<br />
+This section focuses on using Windows PowerShell ISE to efficiently create multiple user accounts within Active Directory. Automation replaced the manual process by using a script to create users, set passwords, and organize them into the _EMPLOYEES Organizational Unit.<br />
 
 <h2>Environments and Technologies Used</h2>
 
