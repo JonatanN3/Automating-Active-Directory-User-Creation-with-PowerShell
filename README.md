@@ -92,7 +92,7 @@ This is the proof stage. It confirms the accounts were actually written into Act
 <h2>Attempt Sign-In with a Generated User Account</h2>
 
 <p>
-<img width="1536" height="1024" alt="LabB17" src="https://github.com/user-attachments/assets/3c046ffa-7809-45ca-ab30-7f2014c7f55e" />
+<img width="1536" height="1024" alt="LabB14" src="https://github.com/user-attachments/assets/4cf4371f-8af1-4714-ac7a-eb3200de1bc5" />
 </p>
 <p>
 Step:
@@ -109,7 +109,7 @@ This step confirms that account creation was completed correctly. It verifies th
 <h2>Confirm Successful Login with the Generated User</h2>
 
 <p>
-<img width="1536" height="1024" alt="LabB18" src="https://github.com/user-attachments/assets/c22b19f9-d824-44e9-be8e-5744bdf9ae4d" />
+<img width="1536" height="1024" alt="LabB16" src="https://github.com/user-attachments/assets/95c592e6-ea03-42f4-bee2-bc042b1f37da" />
 </p>
 <p>
 Steps:
