@@ -101,7 +101,7 @@ Step:
 - Enter the password specified in the script.
 - Start the login process using the domain user credentials.
 
-**Edxplanation**
+**Explanation**
 This step confirms that account creation was completed correctly. It verifies that the user can sign in using the assigned credentials and that Active Directory properly processes the login request.
 
 <h2>Confirm Successful Login with the Generated User</h2>
