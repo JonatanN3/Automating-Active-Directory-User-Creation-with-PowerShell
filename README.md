@@ -84,9 +84,9 @@ Steps:
 - Select the _EMPLOYEES Organizational Unit.
 - Review the list of users shown in the main pane.
 - Choose a user account that will be used for attempt login.
+  
 **Explanation:**
 This is the proof stage. It confirms the accounts were actually written into Active Directory and stored in the correct location.
-
 
 <h2>Attempt Sign-In with a Generated User Account</h2>
 
@@ -104,7 +104,6 @@ Step:
 **Edxplanation**
 This step confirms that account creation was completed correctly. It verifies that the user can sign in using the assigned credentials and that Active Directory properly processes the login request.
 
-
 <h2>Confirm Successful Login with the Generated User</h2>
 
 <p>
@@ -119,7 +118,6 @@ Steps:
 
 **Explanation**
 This step serves as the final verification of the automation process. It ensures that all generated accounts are operational, allowing users to authenticate and access resources within the domain successfully.
-
 
 <h2>Summary</h2>
 
